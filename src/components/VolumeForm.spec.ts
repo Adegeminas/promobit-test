@@ -47,8 +47,7 @@ describe('VolumeForm', () => {
 			await wrapper.get('.field__select').setValue('GB');
 			await wrapper.vm.$nextTick();
 
-			const sizeInput = wrapper.get('[data-testid="volume-size"]')
-				.element as HTMLInputElement;
+			const sizeInput = wrapper.get('[data-testid="volume-size"]').element as HTMLInputElement;
 			expect(sizeInput.value).toBe('1');
 
 			const btn = wrapper.get('button[type="submit"]');

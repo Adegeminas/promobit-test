@@ -193,9 +193,7 @@ function onNameBlur(): void {
 					@blur="onNameBlur"
 					@input="scheduleNameCheck"
 				/>
-				<span v-if="nameChecking" class="field__hint field__hint--muted"
-					>Проверка имени…</span
-				>
+				<span v-if="nameChecking" class="field__hint field__hint--muted">Проверка имени…</span>
 				<span v-if="nameFormatMessage" class="field__hint field__hint--error">{{
 					nameFormatMessage
 				}}</span>
